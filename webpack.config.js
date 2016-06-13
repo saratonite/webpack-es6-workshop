@@ -1,7 +1,7 @@
 module.exports = {
 
 
-  entry:"./main.js",
+  entry:"./src/main.js",
   output:{
     path:__dirname,
     filename:'bundle.js'
@@ -14,7 +14,7 @@ module.exports = {
         test:/\.css$/,loader:"style!css!"
       },
       //  Transpile file es6 files
-      { test: /\.es6$/, exclude: /node_modules/, loader: "babel-loader"}
+      { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader"}
     ]
   }
 };
