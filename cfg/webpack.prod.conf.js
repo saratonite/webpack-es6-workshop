@@ -14,6 +14,7 @@ module.exports = {
     loaders:[
 
       { test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader") },
+      { test: /\.scss$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader","sass-loader") },
       //  Transpile file es6 files
       { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader"},
       // Files

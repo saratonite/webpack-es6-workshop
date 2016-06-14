@@ -4,6 +4,7 @@ var $ = require('jquery')
 
 
 var style = require('./style.css');
+var styleScss = require('./scss/app.scss');
 
 
 
