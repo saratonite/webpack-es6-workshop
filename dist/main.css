@@ -1,0 +1,14 @@
+html{
+  font-family:helvetica;
+
+}
+h1{
+  color: yellow;
+}
+
+p{
+  background-color:#fff;
+  color:black;
+  padding: 10px;
+  border-radius:10px;
+}

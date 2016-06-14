@@ -12,7 +12,9 @@ console.log(style);
 console.log(message);
 
 var h1 = $('<h1></h1>').text(message);
-$('body').css('background','red').prepend(h1);
+$('body').css('background','#538963').prepend(h1);
 
+var img = document.createElement('img');
+img.src = require('./img/world.png');
 
-// Vue app
+document.body.appendChild(img);
