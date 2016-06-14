@@ -1,10 +1,10 @@
 {
-  "name": "webpack-fun",
+  "name": "Hackpack",
   "version": "1.0.0",
-  "description": "",
+  "description": "Webpack hacks",
   "main": "main.js",
   "dependencies": {
-    "jquery": "^2.2.1"
+    "spectre.css": "^0.1.24"
   },
   "devDependencies": {
     "babel-core": "^6.6.5",
@@ -13,6 +13,8 @@
     "css-loader": "^0.23.1",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.5",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
     "node-sass": "^3.7.0",
     "sass-loader": "^3.2.0",
     "style-loader": "^0.13.0",

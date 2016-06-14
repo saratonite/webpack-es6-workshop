@@ -11,12 +11,9 @@ module.exports = {
   module:{
     loaders:[
 
-      {
-        test:/\.css$/,loader:"style!css!"
-      },
-      {
-        test:/\.scss$/,loader:"style!css!sass!"
-      },
+      {test:/\.css$/,loader:"style!css!"},
+      {test:/\.scss$/,loader:"style!css!sass!"},
+      {test:/\.less$/,loader:"style!css!less!"},
       //  Transpile file es6 files
       { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader"},
       // Files

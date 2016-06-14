@@ -1,6 +1,7 @@
 
 # TODO
 
-+ [] Configuration for Development and Production
-+ [] Css Extract
-+ [] Use html-webpack-plugin
++ [X] Configuration for Development and Production
++ [X] Css Extract
++ [X] Use html-webpack-plugin
++ [X] Seperate images
