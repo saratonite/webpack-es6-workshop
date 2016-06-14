@@ -1,13 +1,16 @@
 var config = require("./config");
+var webpack = require("webpack");
+var path = require("path");
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
 
 
   entry:"./src/main.js",
   output:{
-    path:__dirname,
-    filename:config.distPath+'bundle.js'
+    path:path.resolve(__dirname, '../dist'),
+    filename:'bundle.js'
   },
   // Modules
   module:{
@@ -22,6 +25,10 @@ module.exports = {
     ]
   },
   plugins: [
-        new ExtractTextPlugin("../dist/[name].css")
+        new ExtractTextPlugin("[name].css"),
+        new HtmlWebpackPlugin({
+          template:"index.html",
+          filename:path.resolve(__dirname, '../dist/index.html'),
+        })
   ]
 };

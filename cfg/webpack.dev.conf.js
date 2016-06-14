@@ -1,3 +1,4 @@
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
 
 
@@ -21,5 +22,12 @@ module.exports = {
       // Files
       { test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192' }
     ]
-  }
+  },
+  plugins:[
+    new HtmlWebpackPlugin({
+      template:"index.html",
+      filename:'index.html',
+      inject:true
+    })
+  ]
 };
